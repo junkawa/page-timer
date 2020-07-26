@@ -15,16 +15,26 @@ limitations under the License.
 -->
 
 <html>
-<head><title>Page Timer Options</title></head>
+
+<head>
+    <title>Page Timer Options</title>
+</head>
 
 <body>
+    <p>
+        History size:
+        <input type="text" id="history_size" value="23"></input>
+    </p>
+    <p>
+        URLs:
+    <div>
+        <textarea id="url_text" style="width:80%"></textarea>
+    </div>
+    </p>
 
-History size:
-<input type="text" id="history_size" value="23"></input>
-
-<br>
-<div id="status"></div>
-<button id="save">Save</button>
+    <br>
+    <div id="status"></div>
+    <button id="save">Save</button>
 </body>
 
 <script src="options.js"></script>
