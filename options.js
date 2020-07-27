@@ -15,7 +15,6 @@
  */
 
 function save_options() {
-  localStorage["history_size"] = document.getElementById("history_size").value;
   localStorage["url_text"] = document.getElementById("url_text").value;
 
   chrome.extension.getBackgroundPage().restoreCounter();
@@ -28,10 +27,6 @@ function save_options() {
 }
 
 function restore_options() {
-  var history_size = localStorage["history_size"];
-  if (history_size) {
-    document.getElementById("history_size").value = history_size;
-  }
   var url_text = localStorage["url_text"];
   if (url_text) {
     document.getElementById("url_text").value = url_text;

@@ -32,16 +32,9 @@ for (var i = 0; i < urls.length; i++) {
 }
 document.querySelector('#urls').appendChild(table);
 
-//var r = table.insertRow(-1);
-//r.insertCell(-1).textContent = "Total";
-//r.insertCell(-1).textContent = FormatDuration(total * 1000);
 document.querySelector('#total').append( FormatDuration(total * 1000));
-//document.body.appendChild(table);
-
 
 function clear_counter() {
-  // console.log("clear_counter");
   chrome.extension.getBackgroundPage().clearCounter();
-  // chrome.extension.getBackgroundPage().callTest();
 }
 document.querySelector('#clear').addEventListener('click', clear_counter);
