@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Page Timer",
-  "description": "How long have I been on this page?",
-  "version": "1.7",
-  "author": "sworley@google.com",
+  "name": "Tab time counter",
+  "description": "How long have I been on urls?",
+  "version": "1.0.0",
+  "author": "",
   "permissions": [
     "tabs"
   ],
